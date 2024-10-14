@@ -1,0 +1,66 @@
+body {
+    background-color: #1a1a1a; /* Fundo escuro */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px;
+    border-bottom: 2px solid  rgb(14, 72, 222); 
+}
+
+nav{
+    position: relative;
+    margin-top: 30px;
+    height: 50px;
+    width: 454px;
+    display: flex;
+    border-radius: 8px;
+    background-color: #333;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a{
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 500;
+    color: aliceblue;
+    text-decoration: none;
+    padding: 0 23px;
+    z-index: 1;
+}
+
+nav span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95px;
+    height: 100%;
+    background: radial-gradient(circle at 85.4% 50.8%, rgb(14, 72, 222) 0%, rgb(3, 22, 65) 74.2%);;
+    border-radius: 8px;
+    transition: .5s;
+}
+
+nav a:nth-child(1):hover~span{
+    left: 0;
+}
+
+nav a:nth-child(2):hover~span{
+    left: 105px;
+    width: 110px;
+}
+
+nav a:nth-child(3):hover~span{
+    left: 220px;
+    width: 110px;
+}
+nav a:nth-child(4):hover~span{
+    left: 344px;
+    width: 110px;
+}
