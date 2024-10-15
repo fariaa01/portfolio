@@ -6,7 +6,7 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
     align-items: center;
     box-sizing: border-box;
     padding: 20px;
@@ -128,27 +128,7 @@ nav a:nth-child(4):hover~span {
     from { width: 0;}
 }
 
-.text-content  h4{
-    color: rgb(112, 112, 112);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 22px;
-    width: 25ch;
-    border-right: 4px solid;
-    margin-top: 0px;
-    animation: typing 2s  steps(13),
-               blinking 4s infinite step-end alternate
-              ;
-    white-space: nowrap;
-    overflow: hidden;
-} 
 
-@keyframes blinking {
-    50% { border-color: transparent; }
-}
-
-@keyframes typing{
-    from { width: 0;}
-}
 .text-content  h3{
     color: #fff;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -156,12 +136,62 @@ nav a:nth-child(4):hover~span {
     margin-bottom: 10px;
 }
 
+
+
+.bn632-hover {
+    width: 170px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    height: 45px;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    -o-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.bn632-hover:hover {
+    background-position: 100% 0;
+    transform: scale(1.1);
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.bn632-hover:focus {
+    outline: none;
+}
+
+.bn632-hover.bn24 {
+    background-image: linear-gradient(
+        to right,
+        rgb(3, 22, 65),
+        rgb(14, 72, 222),
+        #00d4ff,
+        #090979
+    );
+    box-shadow: 0 4px 15px 0 rgba(6, 34, 161, 0.75);
+}
+
 .image-content {
     flex-shrink: 0;
-    margin-left: 20px;
+    margin-right: 200px;
 }
 
 img {
-    max-width: 150px;
-    height: auto;
+    width: 375px;
+    height: 400px;
+    border-radius: 50%;
+    border: 5px  solid rgb(14, 72, 222);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.2); 
 }
