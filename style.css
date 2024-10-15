@@ -6,14 +6,20 @@ body {
 
 header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between; /* Ícones à direita e navegação centralizada */
     align-items: center;
     box-sizing: border-box;
     padding: 20px;
-    border-bottom: 2px solid  rgb(14, 72, 222); 
+    border-bottom: 1px solid rgb(14, 72, 222);
 }
 
-nav{
+.nav-container {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Alinha a `nav` ao centro do header */
+}
+
+nav {
     position: relative;
     margin-top: 30px;
     height: 50px;
@@ -23,9 +29,10 @@ nav{
     background-color: #333;
     justify-content: center;
     align-items: center;
+    margin-left: 200px;
 }
 
-nav a{
+nav a {
     position: relative;
     display: inline-block;
     font-size: 20px;
@@ -36,31 +43,125 @@ nav a{
     z-index: 1;
 }
 
-nav span{
+nav span {
     position: absolute;
     top: 0;
     left: 0;
     width: 95px;
     height: 100%;
-    background: radial-gradient(circle at 85.4% 50.8%, rgb(14, 72, 222) 0%, rgb(3, 22, 65) 74.2%);;
+    background: radial-gradient(circle at 85.4% 50.8%, rgb(14, 72, 222) 0%, rgb(3, 22, 65) 74.2%);
     border-radius: 8px;
     transition: .5s;
 }
 
-nav a:nth-child(1):hover~span{
+nav a:nth-child(1):hover~span {
     left: 0;
 }
 
-nav a:nth-child(2):hover~span{
+nav a:nth-child(2):hover~span {
     left: 105px;
     width: 110px;
 }
 
-nav a:nth-child(3):hover~span{
+nav a:nth-child(3):hover~span {
     left: 220px;
     width: 110px;
 }
-nav a:nth-child(4):hover~span{
+
+nav a:nth-child(4):hover~span {
     left: 344px;
     width: 110px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+    margin-right: 200px;
+}
+
+.social-icons a {
+    color: aliceblue;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: rgb(14, 72, 222);
+}
+
+/*titles*/
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 70px;
+}
+
+.text-content {
+    flex: 1;
+    margin-left: 150px;
+}
+
+.text-content  h1{
+    color: rgb(14, 72, 222);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 45px;
+    width: 12ch;
+    border-right: 4px solid;
+    margin-top: 5px;
+    animation: typing 2s  steps(13),
+               blinking 4s infinite step-end alternate
+              ;
+    white-space: nowrap;
+    overflow: hidden;
+} 
+
+@keyframes blinking {
+    50% { border-color: transparent; }
+}
+
+@keyframes typing{
+    from { width: 0;}
+}
+
+.text-content  h4{
+    color: rgb(112, 112, 112);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 22px;
+    width: 25ch;
+    border-right: 4px solid;
+    margin-top: 0px;
+    animation: typing 2s  steps(13),
+               blinking 4s infinite step-end alternate
+              ;
+    white-space: nowrap;
+    overflow: hidden;
+} 
+
+@keyframes blinking {
+    50% { border-color: transparent; }
+}
+
+@keyframes typing{
+    from { width: 0;}
+}
+.text-content  h3{
+    color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.image-content {
+    flex-shrink: 0;
+    margin-left: 20px;
+}
+
+img {
+    max-width: 150px;
+    height: auto;
 }
