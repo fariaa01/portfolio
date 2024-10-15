@@ -1,12 +1,12 @@
 body {
-    background-color: #1a1a1a; /* Fundo escuro */
+    background-color: #1a1a1a; 
     margin: 0;
     padding: 0;
 }
 
 header {
     display: flex;
-    justify-content: space-between; /* Ícones à direita e navegação centralizada */
+    justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
     padding: 20px;
