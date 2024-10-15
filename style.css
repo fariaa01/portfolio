@@ -16,7 +16,7 @@ header {
 .nav-container {
     flex: 1;
     display: flex;
-    justify-content: center; /* Alinha a `nav` ao centro do header */
+    justify-content: center;
 }
 
 nav {
