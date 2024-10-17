@@ -8,14 +8,14 @@ body {
 }
 
 ::-webkit-scrollbar {
-    background-color: #1a1a1a; /* Cor de fundo da scrollbar */
-    width: 6px; /* Largura da scrollbar */
-    height: 6px; /* Altura da scrollbar (para scrollbars horizontais) */
+    background-color: #1a1a1a;
+    width: 6px; 
+    height: 6px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: rgb(14, 72, 222); /* Cor do thumb */
-    border-radius: 3px; /* Bordas arredondadas para um visual mais suave */
+    background-color: rgb(14, 72, 222); 
+    border-radius: 3px; 
 }
 
 
